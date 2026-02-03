@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DocCorp</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
         <script>
         tailwind.config = {
@@ -13,32 +14,55 @@
         }
         </script></head>
 <body>
-    <header class="bg-[#F8FAFC] h-24 flex flex-row" id="header">
-        <div class="text-[#1E293B] tracking-tight text-4xl basis-1/3 ml-14 content-center tracking-tight" >DocCorp</div>
-        <div class=" basis-2/3 justify-evenly text-xl flex text-[#64748B] font-sans items-center ">
-            <div class="hover:text-[#1e40af]">home</div>
-            <div class="hover:text-[#1e40af]">Casa</div>
-            <div class="hover:text-[#1e40af]">Volta</div>
+    <header class=" h-24 flex flex-row bg-[#F3F5F4]" id="header">
+        <div class="text-4xl basis-1/3 ml-14 content-center tracking-tight font-medium" id="logo">DocCorp</div>
+        <div class=" basis-2/3 justify-evenly text-xl flex text-[#64748B] font-sans items-center">
+            <div class="hover:text-[#0f3469]">home</div>
+            <div class="hover:text-[#0f3469]">Casa</div>
+            <div class="hover:text-[#0f3469]">Volta</div>
         </div>
     </header>
     <main>
-        <section id="portal-documentacao" class="flex-row flex mt-20  bg-gray-100 p-10">
+        <section id="portal-documentacao" class="flex-row flex bg-[#F7F8FA] p-10">
             <div id="texto-principal" class="text-5xl font-bold w-1/3 leading-normal ml-10"> Soluções inteligentes em Documentação e Gestão de Projetos</div>
             <div id="imagem" class=""></div>
         </section>
-    </main>
-        <section class="bg-[#F8FAFC] h-dvh" id="hero-container-projects">
-            <div class="p-14 text-2xl leading-tight">Nossos Projetos</div>
-            <div class="ml-14" id="card-projects">
-                <div class="h-40 w-64 rounded-xl shadow-xl grid place-items-center">
-                    <img class="w-14 h-14 mt-5" src="images/Instagram_icon.png" alt="imagem logo instagram">
-                    <div class=" flex">
-                        <img class="w-8 h-8 mr-2 mb-2" src="images/pngwing.com.png"></img>
-                        <div class="text-sm text-[#64748B] mt-1">Documentação Instagram</div>
+        <section class="h-dvh" id="hero-container-projects bg-[#F3F5F4]">
+            <div class="pl-14 pb-8 mt-10 text-3xl leading-tight font-medium ">Nossos Projetos</div>
+            <div class="ml-14 flex flex-wrap gap-10" id="card-projects">
+                <div class="h-52 w-80 rounded-xl shadow-xl grid place-items-center transform transition-transform duration-300 hover:scale-110 hover:shadow-2xl cursor-pointer group">
+                    <img class="w-16 h-16 mt-6 transform transition-transform duration-300 group-hover:scale-120" src="images/Instagram_icon.png" alt="imagem logo instagram">
+                    <div class="flex mb-4">
+                        <img class="w-8 h-8 transform transition-transform duration-300 group-hover:scale-115" src="images/pngegg.png"></img>
+                        <div class="pl-3 pt-1 leading-tight transform transition-transform duration-300 group-hover:scale-100">Documentação Instagram</div>
+                    </div>
+                </div>
+                <div class="h-52 w-80 rounded-xl shadow-xl grid place-items-center transform transition-transform duration-300 hover:scale-110 hover:shadow-2xl cursor-pointer group">
+                    <img class="w-16 h-16 mt-6 transform transition-transform duration-300 group-hover:scale-120" src="images/Instagram_icon.png" alt="imagem logo instagram">
+                    <div class="flex mb-4">
+                        <img class="w-8 h-8 transform transition-transform duration-300 group-hover:scale-115" src="images/pngegg.png"></img>
+                        <div class="pl-3 pt-1 leading-tight transform transition-transform duration-300 group-hover:scale-100">Documentação Instagram</div>
+                    </div>
+                </div>
+                <div class="h-52 w-80 rounded-xl shadow-xl grid place-items-center transform transition-transform duration-300 hover:scale-110 hover:shadow-2xl cursor-pointer group">
+                    <img class="w-16 h-16 mt-6 transform transition-transform duration-300 group-hover:scale-120" src="images/Instagram_icon.png" alt="imagem logo instagram">
+                    <div class="flex mb-4">
+                        <img class="w-8 h-8 transform transition-transform duration-300 group-hover:scale-115" src="images/pngegg.png"></img>
+                        <div class="pl-3 pt-1 leading-tight transform transition-transform duration-300 group-hover:scale-100">Documentação Instagram</div>
+                    </div>
+                </div>
+                <div class="h-52 w-80 rounded-xl shadow-xl grid place-items-center transform transition-transform duration-300 hover:scale-110 hover:shadow-2xl cursor-pointer group">
+                    <img class="w-16 h-16 mt-6 transform transition-transform duration-300 group-hover:scale-120" src="images/Instagram_icon.png" alt="imagem logo instagram">
+                    <div class="flex mb-4">
+                        <img class="w-8 h-8 transform transition-transform duration-300 group-hover:scale-115" src="images/pngegg.png"></img>
+                        <div class="pl-3 pt-1 leading-tight transform transition-transform duration-300 group-hover:scale-100">Documentação Instagram</div>
                     </div>
                 </div>
             </div>
+                
         </section>
+    </main>
+        
 </body>
 
 
