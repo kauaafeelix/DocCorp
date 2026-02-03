@@ -13,9 +13,9 @@
             }
         }
         </script></head>
-<body>
-    <header class=" h-24 flex flex-row bg-[#F3F5F4]" id="header">
-        <div class="text-4xl basis-1/3 ml-14 content-center tracking-tight font-medium" id="logo">DocCorp</div>
+<body class="">
+    <header class="h-24 flex flex-row bg-[#F3F5F4]" id="header">
+        <div class="text-4xl basis-1/3 ml-40 content-center tracking-tight font-medium" id="logo">DocCorp</div>
         <div class=" basis-2/3 justify-evenly text-xl flex text-[#64748B] font-sans items-center">
             <div class="hover:text-[#0f3469]">home</div>
             <div class="hover:text-[#0f3469]">Casa</div>
@@ -23,39 +23,67 @@
         </div>
     </header>
     <main>
-        <section id="portal-documentacao" class="flex-row flex bg-[#F7F8FA] p-10">
-            <div id="texto-principal" class="text-5xl font-bold w-1/3 leading-normal ml-10"> Soluções inteligentes em Documentação e Gestão de Projetos</div>
-            <div id="imagem" class=""><img class="w-96 h-96" src="images/unnamed-removebg-preview.png" alt="imagem de hero"></div>
+        <section class="bg-[#E6E9EE] pt-10 pb-10 flex flex-nowrap items-center justify-between" id="portal-documentacao">
+            <div class="ml-40" id="hero-container-hero">
+                <div class="text-5xl font-bold w-2/3 leading-normal" id="texto-principal"> Soluções inteligentes em Documentação <br> e Gestão de Projetos</div>
+                <button class="w-64 h-14 mt-16 mb-16 text-white bg-[#2370D5] rounded-xl text-lg transform transition-transform duration-300 hover:scale-110 cursor-pointer group" id="button-portal-documentacao">Portal da Documentação</button>
+            </div>
+             <img class="w-96 h-96 mr-96" src="images/unnamed-removebg-preview.png" alt="ilustração" />
         </section>
-        <section class="h-dvh" id="hero-container-projects bg-[#F3F5F4]">
-            <div class="pl-14 pb-8 mt-10 text-3xl leading-tight font-medium ">Nossos Projetos</div>
-            <div class="ml-14 flex flex-wrap gap-10" id="card-projects">
+
+        <section class="h-dvh bg-[#F3F5F4]" id="hero-container-projects ">
+            <div class="pl-40 pb-8 pt-10 text-3xl leading-tight font-medium ">Nossos Projetos</div>
+            <div class="ml-40 flex flex-wrap gap-10" id="card-projects">
                 <div class="h-52 w-80 rounded-xl shadow-xl grid place-items-center transform transition-transform duration-300 hover:scale-110 hover:shadow-2xl cursor-pointer group">
                     <img class="w-16 h-16 mt-6 transform transition-transform duration-300 group-hover:scale-120" src="images/Instagram_icon.png" alt="imagem logo instagram">
-                    <div class="flex mb-4">
-                        <img class="w-8 h-8 transform transition-transform duration-300 group-hover:scale-115" src="images/pngegg.png"></img>
-                        <div class="pl-3 pt-1 leading-tight transform transition-transform duration-300 group-hover:scale-100">Documentação Instagram</div>
+                    <div class="flex mb-6">
+                        <div class="flex pt-1">
+                            <img class="w-8 h-8 transform transition-transform duration-300 group-hover:scale-115" src="images/pngegg.png"></img>
+                        </div>
+                        <div class="">
+                            <div class="pl-3 leading-tight transform transition-transform duration-300 group-hover:scale-100">Documentação Instagram</div>
+                            <div class="pl-3 text-sm text-[#64748B] leading-tight transform transition-transform duration-300 group-hover:scale-100">Há 3 dias atrás</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="h-52 w-80 rounded-xl shadow-xl grid place-items-center transform transition-transform duration-300 hover:scale-110 hover:shadow-2xl cursor-pointer group">
+                    <img class="w-16 h-16 mt-6 transform transition-transform duration-300 group-hover:scale-120" src="images/Instagram_icon.png" alt="imagem logo instagram">
+                    <div class="flex mb-6">
+                        <div class="flex pt-1">
+                            <img class="w-8 h-8 transform transition-transform duration-300 group-hover:scale-115" src="images/pngegg.png"></img>
+                        </div>
+                        <div class="">
+                            <div class="pl-3 leading-tight transform transition-transform duration-300 group-hover:scale-100">Documentação Instagram</div>
+                            <div class="pl-3 text-sm text-[#64748B] leading-tight transform transition-transform duration-300 group-hover:scale-100">Há 3 dias atrás</div>
+                        </div>
                     </div>
                 </div>
                 <div class="h-52 w-80 rounded-xl shadow-xl grid place-items-center transform transition-transform duration-300 hover:scale-110 hover:shadow-2xl cursor-pointer group">
                     <img class="w-16 h-16 mt-6 transform transition-transform duration-300 group-hover:scale-120" src="images/Instagram_icon.png" alt="imagem logo instagram">
-                    <div class="flex mb-4">
-                        <img class="w-8 h-8 transform transition-transform duration-300 group-hover:scale-115" src="images/pngegg.png"></img>
-                        <div class="pl-3 pt-1 leading-tight transform transition-transform duration-300 group-hover:scale-100">Documentação Instagram</div>
+                    <div class="flex mb-6">
+                        <div class="flex pt-1">
+                            <img class="w-8 h-8 transform transition-transform duration-300 group-hover:scale-115" src="images/pngegg.png"></img>
+                        </div>
+                        <div class="">
+                            <div class="pl-3 leading-tight transform transition-transform duration-300 group-hover:scale-100">Documentação Instagram</div>
+                            <div class="pl-3 text-sm text-[#64748B] leading-tight transform transition-transform duration-300 group-hover:scale-100">Há 3 dias atrás</div>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="h-52 w-80 rounded-xl shadow-xl grid place-items-center transform transition-transform duration-300 hover:scale-110 hover:shadow-2xl cursor-pointer group">
                     <img class="w-16 h-16 mt-6 transform transition-transform duration-300 group-hover:scale-120" src="images/Instagram_icon.png" alt="imagem logo instagram">
-                    <div class="flex mb-4">
-                        <img class="w-8 h-8 transform transition-transform duration-300 group-hover:scale-115" src="images/pngegg.png"></img>
-                        <div class="pl-3 pt-1 leading-tight transform transition-transform duration-300 group-hover:scale-100">Documentação Instagram</div>
-                    </div>
-                </div>
-                <div class="h-52 w-80 rounded-xl shadow-xl grid place-items-center transform transition-transform duration-300 hover:scale-110 hover:shadow-2xl cursor-pointer group">
-                    <img class="w-16 h-16 mt-6 transform transition-transform duration-300 group-hover:scale-120" src="images/Instagram_icon.png" alt="imagem logo instagram">
-                    <div class="flex mb-4">
-                        <img class="w-8 h-8 transform transition-transform duration-300 group-hover:scale-115" src="images/pngegg.png"></img>
-                        <div class="pl-3 pt-1 leading-tight transform transition-transform duration-300 group-hover:scale-100">Documentação Instagram</div>
+                    <div class="flex mb-6">
+                        <div class="flex pt-1">
+                            <img class="w-8 h-8 transform transition-transform duration-300 group-hover:scale-115" src="images/pngegg.png"></img>
+                        </div>
+                        <div class="">
+                            <div class="pl-3 leading-tight transform transition-transform duration-300 group-hover:scale-100">Documentação Instagram</div>
+                            <div class="pl-3 text-sm text-[#64748B] leading-tight transform transition-transform duration-300 group-hover:scale-100">Há 3 dias atrás</div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
