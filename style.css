@@ -2,3 +2,6 @@
     color: #0f3469;
 }
 
+#hero-container-team{
+    background: linear-gradient(to bottom, #E6E9EE 50%, #F3F5F4 50%);
+}
