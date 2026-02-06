@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentação do Figma - DocCorp</title>
+    <title>Manual do Figma - DocCorp</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -19,9 +19,9 @@
         }
     </script>
 </head>
-<body class="bg-gray-50 antialiased">
+<body class="bg-figma-bg antialiased min-h-screen">
 
-    <aside class="fixed top-0 left-0 z-30 w-80 h-screen bg-white border-r border-gray-200 flex flex-col overflow-y-auto">
+     <aside class="fixed top-0 left-0 z-30 w-80 h-screen bg-white border-r border-gray-200 flex flex-col overflow-y-auto">
 
         <div class="p-5 border-b border-gray-100">
             <div class="flex items-center gap-3">
@@ -145,23 +145,127 @@
 
     </aside>
 
-    <main class="ml-80 min-h-screen">
+    <main class="ml-80 min-h-screen bg-gray-50">
 
-        <div class="flex items-center text-sm justify-between px-6 ">
-        <div class="pt-3 h-12 r">
-            <a href="index.html" class="block group flex items-center text-gray-500 hover:text-figma-primary transition-colors">
-                <svg width="22" height="22" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z"/>
+        <div class="flex items-center justify-between px-6 py-4 bg-gray-50 border-b border-gray-200 text-sm">
+            <a href="index.html" class="group flex items-center text-gray-600 hover:text-figma-primary transition">
+                <svg width="20" height="20" viewBox="0 0 24 24" class="mr-2">
+                    <path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z"/>
                 </svg>
-                <h1>Voltar ao início do Site</h1>
-                
+                Voltar ao início do site
             </a>
-            
+            <div class="text-gray-500">Manual do Usuário Figma</div>
         </div>
-        <div class="text-gray-500 flex justify-end pr-10 text-sm">Manual do Usuário Figma</div>
-        </div>
-        <div class="border-b border-gray-200 "></div>
 
+        <div class="py-20 lg:py-28 border-b border-gray-100 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center">
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900">
+                    Manual do Figma
+                </h1>
+                <p class="mt-6 text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    Tudo o que você precisa saber sobre o Figma. Aprenda a usar a ferramenta de design colaborativo mais popular do mundo.
+                </p>
+            </div>
+        </div>
+
+        <div class="py-16 lg:py-24 px-6 lg:px-12 max-w-7xl mx-auto space-y-24 lg:space-y-32">
+
+            <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="space-y-8 order-2 lg:order-1">
+                    <h2 class="text-4xl sm:text-5xl lg:text-gxl font-bold tracking-tight text-gray-900 leading-tight">
+                        O Padrão da Indústria para UI Design
+                    </h2>
+                    <p class="text-lg sm:text-xl leading-relaxed text-gray-700 max-w-prose">
+                        O Figma revolucionou a forma como produtos digitais são construídos. Sendo a ferramenta de design colaborativo mais popular do mundo, ele permite que equipes criem, testem e entreguem designs melhores, tudo diretamente no navegador. Do wireframe inicial ao protótipo de alta fidelidade, o Figma centraliza todo o processo criativo em um único lugar.
+                    </p>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <img 
+                        src="https://www.figma.com/blog/wp-content/uploads/2022/10/multiplayer-1.png" 
+                        alt="Interface principal do Figma" 
+                        loading="lazy"
+                        class="w-full rounded-2xl shadow-2xl ring-1 ring-gray-200/50 object-cover aspect-[4/3]"
+                    >
+                </div>
+            </section>
+
+            <section class=" bg-gray-50 py-20 lg:py-28 rounded-3xl">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto px-6 lg:px-0">
+                    <div class="order-2 lg:order-1">
+                        <img 
+                            src="https://www.figma.com/blog/wp-content/uploads/2019/10/multiplayer-figma-1.gif" 
+                            alt="Colaboração multiplayer em tempo real" 
+                            loading="lazy"
+                            class="w-full rounded-2xl shadow-2xl ring-1 ring-gray-200/50 object-cover aspect-[4/3]"
+                        >
+                    </div>
+                    <div class="space-y-8 order-1 lg:order-2 px-6 lg:px-0">
+                        <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 leading-tight">
+                            Colaboração em Tempo Real
+                        </h2>
+                        <p class="text-lg sm:text-xl leading-relaxed text-gray-700 max-w-prose">
+                            Diga adeus ao envio de arquivos estáticos e versões conflitantes. No Figma, a colaboração é "multiplayer". Várias pessoas podem editar o mesmo arquivo simultaneamente, ver as alterações uns dos outros em tempo real e deixar comentários contextuais. É a transparência que times modernos precisam.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="text-center">
+                <div class="max-w-4xl mx-auto space-y-6 mb-16 lg:mb-20">
+                    <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900">
+                        Um Ecossistema Completo
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                        O Figma não é apenas sobre desenhar retângulos. É uma plataforma robusta que conecta design, prototipagem e desenvolvimento tudo em um só lugar.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+                    <div class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-figma-primary/30 transition-all duration-300 overflow-hidden">
+                        <div class="p-8 pb-0">
+                            <div class="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-blue-50 text-blue-600 mb-6">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="px-8 pb-8 text-left space-y-4">
+                            <h3 class="text-2xl font-semibold text-gray-900 group-hover:text-figma-primary transition-colors">Prototipagem</h3>
+                            <p class="text-gray-600 leading-relaxed">Interatividade fluida, fluxos complexos e transições realistas sem código.</p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-figma-primary/30 transition-all duration-300 overflow-hidden">
+                        <div class="p-8 pb-0">
+                            <div class="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 mb-6">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="px-8 pb-8 text-left space-y-4">
+                            <h3 class="text-2xl font-semibold text-gray-900 group-hover:text-figma-primary transition-colors">Auto Layout</h3>
+                            <p class="text-gray-600 leading-relaxed">Designs responsivos que se ajustam automaticamente ao conteúdo.</p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-figma-primary/30 transition-all duration-300 overflow-hidden">
+                        <div class="p-8 pb-0">
+                            <div class="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-purple-50 text-purple-600 mb-6">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="px-8 pb-8 text-left space-y-4">
+                            <h3 class="text-2xl font-semibold text-gray-900 group-hover:text-figma-primary transition-colors">Dev Mode</h3>
+                            <p class="text-gray-600 leading-relaxed">Inspeção avançada e exportação de código direto do design.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
     </main>
 
     <script src="search.js"></script>
