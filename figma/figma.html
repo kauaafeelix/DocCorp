@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação do Figma - DocCorp</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: {} } }
+    </script>
+</head>
+<body class="bg-[#F3F5F4] text-[#0f1724]">
+    <header class="h-20 bg-white shadow-sm flex items-center px-8">
+        <a href="../index.html" class="text-[#2370D5] font-semibold mr-6">&larr; Voltar</a>
+        <h1 class="text-2xl font-bold">Documentação do Figma</h1>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-8">
+        <section class="bg-white rounded-xl shadow-md p-6 mb-6">
+            <h2 class="text-xl font-semibold mb-2">Resumo</h2>
+            <p class="text-sm text-[#64748B]">Esta página reúne informações essenciais sobre os arquivos e componentes do projeto no Figma para facilitar a comunicação entre design e desenvolvimento.</p>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-md p-6 mb-6">
+            <h2 class="text-lg font-semibold mb-2">Onde encontrar o arquivo</h2>
+            <p class="text-sm text-[#64748B]">Link para o arquivo Figma (coloque aqui o link real do projeto):</p>
+            <p class="mt-3"><a class="text-[#2370D5] underline" href="#" target="_blank" rel="noopener noreferrer">Abrir arquivo Figma</a></p>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-md p-6 mb-6">
+            <h2 class="text-lg font-semibold mb-2">Guia rápido</h2>
+            <ul class="list-disc pl-5 text-sm text-[#64748B]">
+                <li>Componentes: usar componentes principais (Buttons, Inputs, Cards) para consistência.</li>
+                <li>Grid e espaçamento: seguir o sistema de espaçamento do design token do projeto.</li>
+                <li>Tipografia: nomes e tamanhos estão no arquivo "Typography".</li>
+                <li>Ícones e imagens: exportar em PNG/WebP para imagens e SVG para ícones quando possível.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-md p-6 mb-6">
+            <h2 class="text-lg font-semibold mb-2">Cores</h2>
+            <p class="text-sm text-[#64748B]">Paleta principal usada no projeto:</p>
+            <div class="flex gap-4 mt-3">
+                <div class="w-20 h-12 rounded-md bg-[#2370D5] flex items-center justify-center text-white">#2370D5</div>
+                <div class="w-20 h-12 rounded-md bg-[#0f3469] flex items-center justify-center text-white">#0f3469</div>
+                <div class="w-20 h-12 rounded-md bg-[#64748B] flex items-center justify-center text-white">#64748B</div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-md p-6 mb-6">
+            <h2 class="text-lg font-semibold mb-2">Export e convenções</h2>
+            <ul class="list-disc pl-5 text-sm text-[#64748B]">
+                <li>Nomes de camadas: usar nomes descritivos (btn-primary, card-project).</li>
+                <li>Exportar imagens em 2x quando for necessário para telas de alta densidade.</li>
+                <li>SVGs: limpar metadados antes de usar no código.</li>
+            </ul>
+        </section>
+
+        <footer class="text-sm text-[#64748B] mt-8">Última atualização: Há poucos minutos • DocCorp</footer>
+    </main>
+</body>
+</html>
