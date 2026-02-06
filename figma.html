@@ -12,6 +12,7 @@
                     colors: {
                         'figma-bg': '#F8F9FB',
                         'figma-gray': '#6B7280',
+                        'figma-primary': '#2370D5',
                     }
                 }
             }
@@ -40,6 +41,7 @@
                 </svg>
             </div>
 
+            
             <input 
                 id="search-input"
                 type="text" 
@@ -62,8 +64,13 @@
         <ul class="space-y-2">
             
             <li>
-                <input type="checkbox" id="intro" class="peer hidden" checked /> 
+                <input type="checkbox" id="intro-home" class="peer hidden "  /> 
                 <label for="intro" class="flex items-center justify-between px-4 py-3 text-sm font-semibold text-gray-900 bg-gray-100 rounded-lg cursor-pointer hover:bg-gray-200 transition group">
+                    Página Inicial
+                </label>
+
+                <input type="checkbox" id="intro" class="peer hidden" checked/> 
+                <label for="intro" class="flex items-center justify-between px-4 py-3 text-sm font-semibold text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 transition group">
                     Introdução
                     <svg class="w-4 h-4 text-gray-500 transition-transform group-peer-checked:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -89,7 +96,7 @@
             </li>
 
             <li>
-                <input type="checkbox" id="primeiros" class="peer hidden" />
+                <input type="checkbox" id="primeiros" class="peer hidden" checked/>
                 <label for="primeiros" class="flex items-center justify-between px-4 py-3 text-sm font-semibold text-gray-900 rounded-lg cursor-pointer hover:bg-gray-100 transition group">
                     Primeiros passos
                     <svg class="w-4 h-4 text-gray-500 transition-transform group-peer-checked:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -116,7 +123,7 @@
             </li>
 
             <li>
-                <input type="checkbox" id="ferramentas" class="peer hidden" />
+                <input type="checkbox" id="ferramentas" class="peer hidden" checked/>
                 <label for="ferramentas" class="flex items-center justify-between px-4 py-3 text-sm font-semibold text-gray-900 rounded-lg cursor-pointer hover:bg-gray-100 transition group">
                     Ferramentas de Design
                     <svg class="w-4 h-4 text-gray-500 transition-transform group-peer-checked:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -140,14 +147,20 @@
 
     <main class="ml-80 min-h-screen">
 
-        <div class="p-10">
-            <h1 class="text-3xl font-bold text-gray-900">Manual do Figma</h1>
-            <p class="mt-3 text-lg text-gray-600">
-                Tudo o que você precisa saber sobre o Figma. Aprenda a usar a ferramenta de design colaborativo mais popular do mundo.
-            </p>
-
-
+        <div class="flex items-center text-sm justify-between px-6 ">
+        <div class="pt-3 h-12 r">
+            <a href="index.html" class="block group flex items-center text-gray-500 hover:text-figma-primary transition-colors">
+                <svg width="22" height="22" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z"/>
+                </svg>
+                <h1>Voltar ao início do Site</h1>
+                
+            </a>
+            
         </div>
+        <div class="text-gray-500 flex justify-end pr-10 text-sm">Manual do Usuário Figma</div>
+        </div>
+        <div class="border-b border-gray-200 "></div>
 
     </main>
 
