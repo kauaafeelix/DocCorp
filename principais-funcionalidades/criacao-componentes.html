@@ -328,22 +328,77 @@
         </div>
 
 
+        <div class="max-w-5xl mx-auto px-6 lg:px-8 py-10 prose mt-30 prose-lg prose-gray">
+            <h2 class="text-5xl font-bold mb-6">Criação de Componentes Master e Instâncias</h2>
+            <p class="text-xl text-gray-700"> 
+                Um Componente Master funciona como o modelo original de um elemento, enquanto a Instância é uma cópia vinculada a esse original.
+            </p>
+           <div class="max-w-4xl mx-auto px-6 py-12">
 
+            <ul class="space-y-6 md:space-y-8 list-none">
+                <li class="flex items-start gap-4">
+                    <span class="flex-shrink-0 mt-1.5 w-2.5 h-2.5 rounded-full bg-primary"></span>
+                    <div>
+                        <strong class="text-lg md:text-xl text-gray-900 block ">Criação do Master</strong>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Selecione o elemento desejado (ex: um botão) e clique no ícone "Create Component" na barra superior (ou utilize o atalho Ctrl + Alt + K). O elemento será identificado por um ícone de quatro diamantes roxos.
+                        </p>
+                    </div>
+                </li>
+                <img src="../images/criacao-master.png" alt="Captura de tela do Figma criando um componente master" class="w-full rounded-lg shadow-md mt-10">
+                    <p class="mt-5 text-center text-lg text-gray-500">
+                        Captura de tela da interface do Figma demonstrando a criação de um Componente Master a partir de um ícone de "play", destacando o acionamento da função através do ícone de quatro diamantes roxos na barra superior ou pelo atalho Ctrl + Alt + K.
+                </img>
 
-        <div class="py-20 lg:py-28 border-b border-gray-100 bg-gray-50">
-            <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center">
-                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900">
-                    introducao
-                </h1>
-                <p class="mt-6 text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                    breve descricao
-                </p>
-            </div>
+                <li class="flex items-start gap-4">
+                    <span class="flex-shrink-0 mt-1.5 w-2.5 h-2.5 rounded-full bg-primary"></span>
+                    <div>
+                        <strong class="text-lg md:text-xl text-gray-900 block">Geração de Instâncias</strong>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Para utilizar o componente em outras telas, arraste-o a partir do painel de Assets ou duplique o Master. As instâncias são identificadas por um único diamante vazado.
+                        </p>
+                    </div>
+                </li>
+                <img src="../images/geracao-instancias.png" alt="Captura de tela do Figma em geracoes instancias" class="w-full rounded-lg shadow-md mt-10">
+                    <p class="mt-5 text-center text-lg text-gray-500">
+                        Captura de tela do painel lateral esquerdo do Figma na aba Assets, demonstrando a biblioteca de componentes criados no arquivo e o processo de gerar uma Instância ao selecionar o "Componente 1" e clicar no botão Insert instance.
+                </img>
+                <li class="flex items-start gap-4">
+                    <span class="flex-shrink-0 mt-1.5 w-2.5 h-2.5 rounded-full bg-primary"></span>
+                    <div>
+                        <strong class="text-lg md:text-xl text-gray-900 block">Edição e Propagação</strong>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Qualquer alteração estética realizada no Componente Master será aplicada automaticamente a todas as suas Instâncias.
+                        </p>
+                    </div>
+                </li>
+                <img src="../images/edicao-propagacao.png" alt="Captura de tela do Figma em ecicao e propagacao" class="w-full rounded-lg shadow-md mt-10">
+                    <p class="mt-5 text-center text-lg text-gray-500">
+                        Captura de tela demonstrando a edição do Componente Master (identificado pelo ícone de quatro diamantes roxos), onde a alteração da cor de preenchimento para azul no original é automaticamente propagada para sua Instância vinculada.
+                    </p>    
+                </img>
+                <li class="flex items-start gap-4">
+                    <span class="flex-shrink-0 mt-1.5 w-2.5 h-2.5 rounded-full bg-primary"></span>
+                    <div>
+                        <strong class="text-lg md:text-xl text-gray-900 block">Sobrescrita (Overrides)</strong>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            É permitido alterar conteúdos específicos em uma instância (como o texto de um botão) sem que isso perca o vínculo visual com o modelo original.
+                        </p>
+                    </div>
+                </li>
+                <img src="../images/sobescrita.png" alt="Captura de tela do Figma em sobrescrita" class="w-full rounded-lg shadow-md mt-10">
+                    <p class="mt-5 text-center text-lg text-gray-500">
+                        Captura de tela demonstrando a aplicação de uma Sobrescrita (Override), onde a cor de uma Instância específica é alterada de forma independente, sem modificar o Componente Master original.
+                    </p>    
+                </img>
+            </ul>
         </div>
-
-
-
-
+        <div>
+            <p class="text-right text-sm text-gray-500 mt-10">
+                Vinicius Zapella<br>
+                09 de fevereiro de 2026
+            </p>
+        </div>
         
     </main>
 
