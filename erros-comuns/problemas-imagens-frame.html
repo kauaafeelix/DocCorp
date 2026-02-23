@@ -298,7 +298,7 @@
 
     </aside>
 
-    <main class="ml-80 min-h-screen bg-gray-50">
+   <main class="ml-80 min-h-screen bg-gray-50">
 
         <div class="flex items-center justify-between px-6 py-4 bg-gray-50 border-b border-gray-200 text-sm">
             <a href="../index.html" class="group flex items-center text-gray-600 hover:text-figma-primary transition">
@@ -311,22 +311,133 @@
         </div>
 
 
+        <div class="max-w-5xl mx-auto px-6 lg:px-8 py-10 prose mt-30 prose-lg prose-gray">
+            <h2 class="text-5xl font-bold mb-6">Problemas com Imagem no Frame</h2>
+            <p class="text-xl text-gray-700"> 
+                A inserção e manipulação de imagens é uma das ações mais frequentes no Figma. Problemas geralmente estão ligados à hierarquia de camadas, configurações de preenchimento (Fill) ou incompatibilidade com Auto Layout.
+            </p>
+           <div class="max-w-4xl mx-auto px-6 py-12">
 
+            <ul class="space-y-6 md:space-y-8 list-none">
+                <li class="flex items-start gap-4">
+                    <span class="flex-shrink-0 mt-1.5 w-2.5 h-2.5 rounded-full bg-primary"></span>
+                    <div>
+                        <strong class="text-lg md:text-xl text-gray-900 block ">Problema 1: Imagem não aparece no Frame</strong>
+                    </div>
+                </li>
+                <img src="../images/imagem-nao-aparece-frame.png" alt="Captura de tela do Figma imagem nao aparece no frame" class="w-full rounded-lg shadow-md mt-10">
+                    <p class="mt-5 text-center text-lg text-gray-500">
+                        Captura de tela demonstrando um erro de carregamento ou visualização, onde o conteúdo principal de um card de componente não é exibido corretamente, resultando em um preenchimento sólido que oculta a interface. Esse problema pode ocorrer devido a falhas na renderização de ativos ou na conexão com a biblioteca, impedindo a visualização clara dos modos claro e escuro aplicados aos dispositivos.
+                </img>
 
-        <div class="py-20 lg:py-28 border-b border-gray-100 bg-gray-50">
-            <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center">
-                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900">
-                    introducao
-                </h1>
-                <p class="mt-6 text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                    breve descricao
-                </p>
-            </div>
+                <li class="flex items-start gap-4">
+                    <span class="flex-shrink-0 mt-1.5 w-2.5 h-2.5 rounded-full bg-primary"></span>
+                    <div>
+                        <strong class="text-lg md:text-xl text-gray-900 block">Possíveis causas</strong>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            A imagem está atrás de outra camada.
+                        </p>
+                    </div>
+                </li>
+                <img src="../images/imagem-outra-camada.png" alt="Captura de tela do Figma imagem nao aparece mas esta em outra camada" class="w-full rounded-lg shadow-md mt-10">
+                    <p class="mt-5 text-center text-lg text-gray-500">
+                        Captura de tela demonstrando um problema de hierarquia visual, onde o conteúdo das interfaces móveis está oculto por estar posicionado em outra camada inferior ou atrás de um elemento retangular escuro que sobrepõe a visualização. Para corrigir essa falha e revelar as telas de "Notification" e "Discover", é necessário ajustar a ordem no painel de camadas, trazendo os elementos do design para a frente da forma que está causando a obstrução.
+                </img>
+                <li class="flex items-start gap-4">
+                    <span class="flex-shrink-0 mt-1.5 w-2.5 h-2.5 rounded-full bg-primary"></span>
+                    <div>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            A opacidade está reduzida.
+                        </p>
+                    </div>
+                </li>
+                <img src="../images/opacidade-reduzida.png" alt="Captura de tela do Figma opacidade reduzida" class="w-full rounded-lg shadow-md mt-10">
+                    <p class="mt-5 text-center text-lg text-gray-500">
+                        Captura de tela demonstrando o painel lateral direito do Figma com a opacidade reduzida em um dos elementos, revelando que o conteúdo da interface móvel está, na verdade, posicionado em outra camada atrás de um retângulo escuro. Essa visualização confirma que o design não desapareceu, mas está sendo obstruído por uma forma sobreposta, o que pode ser corrigido ao reorganizar a ordem das camadas ou ajustar a transparência para garantir a visibilidade total das telas.
+                </img>
+                <li class="flex items-start gap-4">
+                    <span class="flex-shrink-0 mt-1.5 w-2.5 h-2.5 rounded-full bg-primary"></span>
+                    <div>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            O Frame possui máscara ativa
+                        </p>
+                    </div>
+                </li>
+                <img src="../images/mascara-ativa.png" alt="Captura de tela do Figma máscara ativa" class="w-full rounded-lg shadow-md mt-10">
+                    <p class="mt-5 text-center text-lg text-gray-500">
+                    Captura de tela demonstrando o painel de camadas, onde um retângulo escuro atua como uma máscara ou sobreposição, evidenciando que os elementos da interface estão presentes, mas em outra camada que impede a sua visualização total. Ao selecionar a área afetada, nota-se que a estrutura do design permanece intacta por trás do elemento obstruinte, o que pode ser resolvido ao reposicionar as camadas ou ajustar as propriedades de visibilidade.
+                </img>
+                <li class="flex items-start gap-4">
+                    <span class="flex-shrink-0 mt-1.5 w-2.5 h-2.5 rounded-full bg-primary"></span>
+                    <div>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            O Fill foi removido ou configurado incorretamente.
+                        </p>
+                    </div>
+                </li>
+                <img src="../images/fill.png" alt="Captura de tela do Figma fill" class="w-full rounded-lg shadow-md mt-10">
+                    <p class="mt-5 text-center text-lg text-gray-500">
+                        Captura de tela demonstrando o papel do Fill (preenchimento) nesse erro de visualização, onde um retângulo escuro com preenchimento sólido atua como uma sobreposição, evidenciando que os elementos da interface estão presentes, mas em outra camada que impede a sua visualização total. Ao selecionar a área afetada, nota-se que a estrutura do design permanece intacta por trás desse Fill obstrutor, o que pode ser resolvido ao reposicionar as camadas ou ajustar a opacidade do preenchimento para revelar o conteúdo.
+                </img>
+                
+
+                <li class="flex items-start gap-4">
+                    <span class="flex-shrink-0 mt-1.5 w-2.5 h-2.5 rounded-full bg-primary"></span>
+                    <div>
+                        <strong class="text-lg md:text-xl text-gray-900 block">Soluções</strong>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Verificar a hierarquia no painel Layers.
+                        </p>
+                    </div>
+                </li>
+                <img src="../images/hierarquia.png" alt="Captura de tela do Figma imagem nao aparece mas esta em outra camada verifica hierarquia" class="w-full rounded-lg shadow-md mt-10">
+                    <p class="mt-5 text-center text-lg text-gray-500">
+                        Captura de tela demonstrando o painel de contexto do Figma focado na hierarquia de camadas, onde o menu de seleção (Select layer) revela que o frame "Mobile" e seus componentes internos estão posicionados abaixo de um elemento obstrutor. Essa visualização confirma que o design não desapareceu, mas está retido em uma outra camada inferior, sendo necessário utilizar comandos como Bring to front ou Send to back para reorganizar a ordem e restaurar a visibilidade das interfaces.
+                </img>
+                <li class="flex items-start gap-4">
+                    <span class="flex-shrink-0 mt-1.5 w-2.5 h-2.5 rounded-full bg-primary"></span>
+                    <div>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Ajustar a opacidade no painel Appearence.
+                        </p>
+                    </div>
+                </li>
+                <img src="../images/ajuste-opacidade.png" alt="Captura de tela do Figma opacidade reduzida ajuste" class="w-full rounded-lg shadow-md mt-10">
+                    <p class="mt-5 text-center text-lg text-gray-500">
+                        Captura de tela demonstrando o painel Appearance no Figma, onde é possível ajustar a visibilidade de um elemento através do campo Opacity. Ao reduzir esse valor, como no exemplo configurado em 20%, o preenchimento sólido do retângulo torna-se translúcido, permitindo que o conteúdo das interfaces móveis posicionado em camadas inferiores volte a ser visualizado. Essa técnica é uma alternativa eficaz ao reposicionamento de camadas para verificar elementos que estão ocultos por um Fill obstrutor.
+                </img>
+                <li class="flex items-start gap-4">
+                    <span class="flex-shrink-0 mt-1.5 w-2.5 h-2.5 rounded-full bg-primary"></span>
+                    <div>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                           Desativar ou revisar a máscara.
+                        </p>
+                    </div>
+                </li>
+                <img src="../images/ajuste-mascara.png" alt="Captura de tela do Figma máscara ativa ajuste" class="w-full rounded-lg shadow-md mt-10">
+                    <p class="mt-5 text-center text-lg text-gray-500">
+                        Captura de tela demonstrando o painel de contexto do Figma, onde a opção Remove mask (atalho Ctrl + Alt + M) é destacada como a solução para restaurar a visibilidade do design. Este problema ocorre quando um elemento é configurado como uma máscara, fazendo com que o conteúdo das interfaces móveis, como as telas de "Notification" e "Discover", fique oculto por uma camada superior obstrutora. Ao desativar ou revisar a máscara, a estrutura do design que estava "presa" na hierarquia inferior volta a ser exibida corretamente no canvas.
+                </img>
+                <li class="flex items-start gap-4">
+                    <span class="flex-shrink-0 mt-1.5 w-2.5 h-2.5 rounded-full bg-primary"></span>
+                    <div>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Confirmar se a imagem está aplicada como Fill corretamente.
+                        </p>
+                    </div>
+                </li>
+                <img src="../images/fill-corretamente.png" alt="Captura de tela do Figma fill corretamente" class="w-full rounded-lg shadow-md mt-10">
+                    <p class="mt-5 text-center text-lg text-gray-500">
+                        Captura de tela demonstrando a propriedade Fill (preenchimento) no painel lateral do Figma, onde uma camada está configurada com uma imagem a 100% de opacidade. Para garantir que o design seja exibido corretamente e não fique oculto, é fundamental revisar se o Fill de elementos sobrepostos está configurado de forma a permitir a visibilidade das camadas inferiores ou se deve ser desativado clicando no ícone do "olho".
+                </img>
+            </ul>
         </div>
-
-
-
-
+        <div>
+            <p class="text-right text-sm text-gray-500 mt-10">
+                Vinicius Zapella<br>
+                09 de fevereiro de 2026
+            </p>
+        </div>
         
     </main>
 
